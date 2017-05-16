@@ -18,9 +18,11 @@ namespace OdeToFood.Controllers
 
         public ActionResult About()
         {
-            var model = new AboutModel();
-            model.Name = "Scott";
-            model.Location = "Maryland, USA";
+            var model = new AboutModel
+            {
+                Name = "Scott",
+                Location = "Maryland, USA"
+            };
 
             return View(model);
         }
